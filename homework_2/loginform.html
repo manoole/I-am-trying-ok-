@@ -31,6 +31,9 @@
 			box-shadow: 0 1px 2px 1px rgba(175,153,135,0.8), 0 0 0 10px rgba(255,255,255,0.5);
 			border-radius: 5px;
 			position: relative;
+			user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
 		}
 		.chromepls {
 			display: flex;
@@ -55,17 +58,27 @@
 			text-decoration: none;
 			color: #ffb347;
 		}
+		.form__legend a:hover {
+			color: rgb(245, 159, 48);
+		}
 		.form__group {
 			position: relative;
 			max-width: 15rem;
 			margin-top: 1rem;
-			flex-shrink: 0.5;
 		}
 		.form__control {
+			display: block;
+			width: 100%;
+			max-width: 100%;
+			min-width: 100%;
 			border-radius: 3px;
 			border: 3px solid #ebe6e2;
 			padding: 0.5rem;
 			margin-top: 1rem;
+		}
+		.form__control:focus {
+			box-shadow: 0 0 3px 2px #decfc8;
+			outline: none;
 		}
 		.form__label {
 			font-size: 1.1rem;
@@ -122,6 +135,7 @@
 			display: flex;
 			justify-content: space-between;
 			margin-top: 1rem;
+			position: relative;
 		}
 		.btn {
 			width: 15rem;
@@ -131,6 +145,26 @@
 			font-weight: bold;
 			border: 0;
 			border-radius: 0.3rem;
+			cursor: pointer;
+		}
+		.btn:focus {
+			outline: 0;
+			box-shadow: 0 0 3px 2px #decfc8;
+		}
+		.btn::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			display: none;
+		}
+		.btn:hover {
+			display: block;
+			background: rgb(32, 131, 186);
+		}
+		.btn-login:hover {
+			background: rgb(245, 159, 48);
 		}
 		.btn-twitter {
 			background: linear-gradient(to top, #2b8dc5, #34a4cf);
@@ -152,7 +186,7 @@
 <div class="chromepls">
 			<div class="form__group">
 				<label for="username" class="form__label">USERNAME</label>
-				<input type="text" id="username" class="form__control" placeholder="Username or email">
+				<input autofocus type="text" id="username" class="form__control" placeholder="Username or email">
 			</div>
 			<div class="form__group">
 				<label for="password" class="form__label" id="passlabel">PASSWORD</label>
