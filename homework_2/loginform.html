@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name=“viewport” content=“width=device-width, initial-scale=1”>
 	<title>
 	</title>
 	<style type="text/css">
@@ -9,6 +10,7 @@
 		}
 		body {
 			font-size: 62.5%;
+			margin: 0 auto;
 		}
 		*,*::before, *::after {
 			box-sizing: border-box;
@@ -175,6 +177,24 @@
 			background: linear-gradient(to top, #ffb448, #fbd265);
 			text-shadow: -1px -1px #fed39d;
 			color: #996343;
+		}
+		@media screen and (max-width: 576px) {
+			.chromepls {
+				display: block;
+			}
+			.form__group {
+				max-width: 100%;
+			}
+			.form__actions {
+				display: block;
+			}
+			.form__actions button {
+				margin-top: 1rem;
+				width: 100%;
+			}
+			.form__checkbox label::before {
+				right: 50%; /*не знаю, насколько правильно будет так указывать, по сути же игра в угадайку "подбери число, чтобы неплохо смотрелось"*/
+			}
 		}
 	</style>
 </head>
