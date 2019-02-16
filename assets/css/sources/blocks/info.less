@@ -1,0 +1,96 @@
+.info {
+  padding: 0 3.3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: @font-size-lg;
+
+  &__more {
+    padding: 4rem;
+    color: @color-lightblue;
+    background: @color-cyan;
+    border-radius: 0.5rem;
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 3rem;
+    align-self: center;
+    margin-left: 4rem;
+  }
+  &__p, &__img {
+    font-size: @font-size-sm;
+    font-weight: normal;
+  }
+  &__img {
+    align-self: center;
+  }
+  &__title {
+    margin-top: 0;
+  }
+  &__form {
+    min-height: 45rem;
+  }
+  &__fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    padding-right: 2rem;
+  }
+  &__legend {
+    font-size: @font-size-lg;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  &__form {
+    width: 33%;
+  }
+}
+.form {
+  &__group {
+    margin: 1.5rem 0 0 0;
+  }
+  &__control {
+    padding: 1.7rem 2.4rem;
+    border: 1px solid lightgrey;
+    font-size: @font-size-sm;
+    &:focus {
+      box-shadow: 0 0 1rem @color-blue;
+    }
+  }
+  &__actions {
+    margin: 2.5rem 0;
+  }
+  &__btn {
+    height: 4.5rem;
+    width: 16.5rem;
+    text-align: center;
+    border: 0;
+    font-size: @font-size-sm;
+    background: @color-yellow;
+    color: @color-black;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+
+    &:hover {
+      background: darken(@color-yellow, 5%);
+    }
+    &:focus {
+      border: 1px solid darkorange;
+    }
+    &:active {
+      background: orange;
+      outline: none;
+    }
+  }
+  &__protect {
+    font-size: @font-size-xs;
+    color: lightgrey;
+  }
+  &__textarea {
+    min-width: 100%;
+    max-width: 100%;
+    resize: none;
+    min-height: 12.3rem;
+    font-family: Arial, sans-serif;
+  }
+}

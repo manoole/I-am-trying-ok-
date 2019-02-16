@@ -1,0 +1,41 @@
+.header {
+  padding: 3.4rem 4.4rem;
+  background: @color-blue;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  &__title {
+    text-decoration: none;
+    color: @color-white;
+  }
+  &__menu {
+    list-style: none;
+    margin: 0 35rem 0 0;
+    padding: 0;
+    display: flex;
+  }
+  &__item {
+    margin-left: 2.8rem;
+    color: @color-white;
+    text-decoration: none;
+    border-bottom: 0.2rem solid @color-white;
+    font-size: @font-size-sm;
+
+    &:hover {
+      color: @color-cyan;
+      border-bottom: 0.2rem solid @color-cyan;
+    }
+    &:active {
+      color: #272c2f;
+      border-bottom: 0.2rem solid #272c2f;
+    }
+    &:focus {
+      color: #184c6b;
+      border-bottom: 0.2rem solid #184c6b;
+    }
+
+  }
+  &__info {
+    color: @color-white;
+  }
+}

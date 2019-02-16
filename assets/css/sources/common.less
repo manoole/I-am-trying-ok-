@@ -1,0 +1,22 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0 auto;
+  font-family: @font;
+  font-size: @font-size-md;
+  width: 128rem; //задала ширину как на макете
+}
+h3 {
+  font-weight: bold;
+  font-size: @font-size-md;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

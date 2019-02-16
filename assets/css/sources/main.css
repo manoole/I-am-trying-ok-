@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  font-size: 1.8rem;
+  width: 128rem;
+}
+h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  padding: 3.4rem 4.4rem;
+  background: #22a2ec;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.header__title {
+  text-decoration: none;
+  color: #fff;
+}
+.header__menu {
+  list-style: none;
+  margin: 0 35rem 0 0;
+  padding: 0;
+  display: flex;
+}
+.header__item {
+  margin-left: 2.8rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 0.2rem solid #fff;
+  font-size: 1.5rem;
+}
+.header__item:hover {
+  color: #184c6b;
+  border-bottom: 0.2rem solid #184c6b;
+}
+.header__item:active {
+  color: #272c2f;
+  border-bottom: 0.2rem solid #272c2f;
+}
+.header__item:focus {
+  color: #184c6b;
+  border-bottom: 0.2rem solid #184c6b;
+}
+.header__info {
+  color: #fff;
+}
+.page {
+  padding: 4.2rem 3.3rem;
+}
+.page__title {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.page__container {
+  margin-top: 3.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.page__item {
+  padding: 3rem;
+  font-size: 1.5rem;
+  min-width: 36rem;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.page__item--normal {
+  border: 1px solid lightgray;
+}
+.page__item--bold {
+  border: 3px solid lightgray;
+  margin: 0 6rem;
+}
+.page__item--shadow {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem lightgray;
+}
+.page__desc {
+  flex-grow: 1;
+}
+.page__name {
+  margin: 0;
+}
+.page__more {
+  font-size: 1.3rem;
+  color: #22a2ec;
+  text-decoration: none;
+  border-bottom: 2px solid #22a2ec;
+  font-weight: bold;
+}
+.page__more:hover {
+  color: #184c6b;
+  border-bottom: 0.2rem solid #184c6b;
+}
+.page__more:active {
+  color: #272c2f;
+  border-bottom: 0.2rem solid #272c2f;
+}
+.page__more:focus {
+  color: #184c6b;
+  border-bottom: 0.2rem solid #184c6b;
+}
+.info {
+  padding: 0 3.3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.3rem;
+}
+.info__more {
+  padding: 4rem;
+  color: #a8c6d8;
+  background: #184c6b;
+  border-radius: 0.5rem;
+  width: 66%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 3rem;
+  align-self: center;
+  margin-left: 4rem;
+}
+.info__p,
+.info__img {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.info__img {
+  align-self: center;
+}
+.info__title {
+  margin-top: 0;
+}
+.info__form {
+  min-height: 45rem;
+}
+.info__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-right: 2rem;
+}
+.info__legend {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.info__form {
+  width: 33%;
+}
+.form__group {
+  margin: 1.5rem 0 0 0;
+}
+.form__control {
+  padding: 1.7rem 2.4rem;
+  border: 1px solid lightgrey;
+  font-size: 1.5rem;
+}
+.form__control:focus {
+  box-shadow: 0 0 1rem #22a2ec;
+}
+.form__actions {
+  margin: 2.5rem 0;
+}
+.form__btn {
+  height: 4.5rem;
+  width: 16.5rem;
+  text-align: center;
+  border: 0;
+  font-size: 1.5rem;
+  background: #ebce0d;
+  color: #272c2f;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+}
+.form__btn:hover {
+  background: #d3b90c;
+}
+.form__btn:focus {
+  border: 1px solid darkorange;
+}
+.form__btn:active {
+  background: orange;
+  outline: none;
+}
+.form__protect {
+  font-size: 1.3rem;
+  color: lightgrey;
+}
+.form__textarea {
+  min-width: 100%;
+  max-width: 100%;
+  resize: none;
+  min-height: 12.3rem;
+  font-family: Arial, sans-serif;
+}
+.footer {
+  background: #22a2ec;
+  color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 3.6rem 1.8rem 5.5rem;
+  max-height: 7.7rem;
+}
+.footer__call {
+  cursor: pointer;
+  margin: 0 60% 0 0;
+  padding: 1.3rem 1.8rem 1.3rem 2.6rem;
+  border: 1px #fff solid;
+  background: transparent;
+  border-radius: 5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.footer__call:active {
+  background: #1186ca;
+}
+.footer__call:focus {
+  border: 2px solid #fff;
+}
+.footer__call:hover {
+  background: #1396e1;
+}
+/*# sourceMappingURL=main.css.map */

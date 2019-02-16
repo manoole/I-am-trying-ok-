@@ -1,0 +1,29 @@
+.footer {
+  background: @color-blue;
+  color: @color-white;
+  font-size: @font-size-xs;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 3.6rem 1.8rem 5.5rem;
+  max-height: 7.7rem;
+  &__call {
+    cursor: pointer;
+    margin: 0 60% 0 0;
+    padding: 1.3rem 1.8rem 1.3rem 2.6rem;
+    border: 1px @color-white solid;
+    background: transparent;
+    border-radius: 5rem;
+    font-weight: bold;
+    color: @color-white;
+    &:active {
+      background: darken(@color-blue, 10%);
+    }
+    &:focus {
+      border: 2px solid @color-white;
+    }
+    &:hover {
+      background: darken(@color-blue, 5%);
+    }
+  }
+}
